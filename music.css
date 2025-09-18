@@ -1,0 +1,337 @@
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: transparent; /* Aquí puedes poner tu imagen de fondo con background-image */
+}
+
+.phone-image {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #1a0d2b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e172f;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: flex;
+  margin-left: 4rem;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 4rem;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  font-size: 16px;
+}
+
+.download-btn {
+  background-color: #a55eea;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+.hero-left,
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Fondo sólido a la izquierda con el texto */
+.hero-left {
+  background-color: #2e2651;
+  color: #fff;
+  padding: 40px;
+}
+
+.hero-content {
+  margin-left: 11rem;
+  max-width: 80%;
+}
+
+.hero-content > h1 {
+  width: 50%;
+}
+
+.hero-content > p {
+  width: 100%;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.hero-left p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.buttons {
+  border: 1px solid #ffffff90;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: white;
+  border: none;
+  color: #ff2a7f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #ffff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fondo de hojas a la derecha */
+.hero-right {
+  background-color: rgba(26, 13, 43, 0.6);
+  background-blend-mode: darken;
+  /* Aquí insertas tu imagen local */
+  background-image: url(../assests/music2taller/hojasFondo.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.hero-right .hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-right .hero-image img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.features {
+  background-color: #f8f9fc;
+  padding: 60px 40px;
+  color: #000;
+  text-align: center;
+}
+
+.features h2 {
+  color: #ff2a7f;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.features-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.features-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.features-text {
+  max-width: 40%;
+  text-align: left;
+}
+
+.features-text h3 {
+  font-size: 24px;
+}
+
+.features-text p {
+  font-size: 16px;
+}
+
+.features-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-text li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.check {
+  color: #ff2a7f;
+  margin-right: 10px;
+}
+
+.pricing {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pricing p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #ccc;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card .price {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card .price span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.card ul {
+  list-style: none; 
+  padding: 0;
+  margin: 20px 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.card .card-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #ff2a7f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+footer {
+  background-color: #f8f9fc;
+  color: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+}
+
+.spanFooter {
+  color: #ff2a7f;
+  justify-content:space-around;
+}
+
+.social img {
+  width: 25px;
+  margin-left: 10px;
+}
